@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punitha R | CSE Student Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b1020;color:#eef2ff;line-height:1.6}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(11,16,32,.9);backdrop-filter:blur(10px);border-bottom:1px solid #27304b}
+.nav-inner{max-width:1100px;margin:auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:800;color:#7dd3fc}
+nav a{color:#dbeafe;text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{color:#7dd3fc}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:100px 24px 50px;background:radial-gradient(circle at 20% 20%,#17305f 0,#0b1020 45%),#0b1020}
+.hero-inner{max-width:1050px;width:100%;display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #334d73;border-radius:30px;color:#7dd3fc;background:#101b33;margin-bottom:18px}
+h1{font-size:clamp(44px,8vw,78px);line-height:1.05;margin-bottom:16px}
+.gradient{background:linear-gradient(90deg,#7dd3fc,#c4b5fd);-webkit-background-clip:text;color:transparent}
+.hero p{font-size:18px;color:#b8c4dd;max-width:650px}
+.buttons{margin-top:28px}
+.btn{display:inline-block;text-decoration:none;padding:12px 20px;border-radius:10px;margin-right:10px;margin-bottom:10px;font-weight:700}
+.primary{background:#7dd3fc;color:#07101d}.secondary{border:1px solid #405273;color:#eaf2ff}
+.profile{width:280px;height:280px;border-radius:50%;margin:auto;border:3px solid #7dd3fc;background:linear-gradient(135deg,#172554,#312e81);display:flex;align-items:center;justify-content:center;font-size:80px;font-weight:800;color:#dbeafe;box-shadow:0 0 70px rgba(125,211,252,.18)}
+section{padding:90px 24px}
+.container{max-width:1050px;margin:auto}
+.section-title{font-size:36px;margin-bottom:35px}.muted{color:#aab7d2}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#11182c;border:1px solid #27304b;border-radius:18px;padding:24px}
+.card h3{margin-bottom:8px;color:#dbeafe}.icon{font-size:32px;margin-bottom:10px}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{padding:10px 16px;border-radius:999px;background:#17213a;border:1px solid #33425f;color:#dbeafe}
+.goal{border-left:4px solid #7dd3fc;margin:15px 0;padding:15px 20px;background:#11182c;border-radius:0 12px 12px 0}
+.highlight{color:#7dd3fc;font-weight:700}
+footer{text-align:center;padding:30px;color:#8f9bb5;border-top:1px solid #27304b}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr;text-align:center}.hero p{margin:auto}.profile{width:210px;height:210px;font-size:60px}.cards{grid-template-columns:1fr}nav a{margin-left:10px}.nav-inner{padding:14px 12px}nav a:nth-child(2),nav a:nth-child(3){display:none}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Punitha R</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#goals">Goals</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="badge">BE CSE • III Year • Age 19</span>
+      <h1>Hi, I'm <span class="gradient">Punitha R</span> 👋</h1>
+      <p>A CSE student who enjoys building things, solving bugs, and learning through code. Welcome to my personal portfolio.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#about">Explore My Portfolio</a>
+        <a class="btn secondary" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <div class="profile">PR</div>
+  </div>
+</header>
+
+<section id="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<p class="muted">I'm Punitha R, a 19-year-old <span class="highlight">BE Computer Science and Engineering (III Year)</span> student. I love exploring technology and improving my programming skills by building and debugging applications.</p>
+<div class="cards" style="margin-top:28px">
+<div class="card"><div class="icon">💻</div><h3>Vibe Coding</h3><p class="muted">I enjoy experimenting with ideas and turning them into working code.</p></div>
+<div class="card"><div class="icon">🐞</div><h3>Debugging</h3><p class="muted">Finding and fixing problems in code is one of my favorite parts of development.</p></div>
+<div class="card"><div class="icon">🚀</div><h3>Learning</h3><p class="muted">I continuously learn new concepts and practice programming.</p></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<h2 class="section-title">Programming Languages</h2>
+<div class="skills">
+<span class="skill">🐍 Python</span>
+<span class="skill">☕ Java</span>
+<span class="skill">⚙️ C</span>
+</div>
+</div>
+</section>
+
+<section id="goals">
+<div class="container">
+<h2 class="section-title">My Goals</h2>
+<div class="goal"><strong>🎯 Short-Term Goal:</strong> Build strong communication skills and become more confident in expressing my ideas.</div>
+<div class="goal"><strong>🚀 Long-Term Goal:</strong> Get a good job in a software company and grow as a software professional.</div>
+<div class="goal"><strong>⭐ Dream Company:</strong> I would love to build my career at <span class="highlight">Zoho</span>.</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2 class="section-title">Let's Connect</h2>
+<p class="muted">Interested in my journey? You can add your email, LinkedIn, GitHub, and resume links here.</p>
+<div class="buttons">
+<a class="btn primary" href="mailto:your-email@example.com">Email Me</a>
+<a class="btn secondary" href="https://www.zoho.com/" target="_blank">Visit Zoho ↗</a>
+</div>
+</div>
+</section>
+
+<footer>© 2026 Punitha R • BE CSE III Year • Personal Portfolio</footer>
+</body>
+</html>
